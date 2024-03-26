@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Funcionario {
     private int id;
-    private String nome = "";
+    private String nome;
     private Date dataNascimento;
     private String nomeMae;
     private String nomePai;
@@ -20,6 +20,11 @@ public class Funcionario {
     private String cep;
     private String email;
     private String celular;
+    public Funcionario() {
+        this.id = 0;
+        this.nome = "";
+    }
+
     public int getId() {
         return id;
     }
